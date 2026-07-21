@@ -1,0 +1,8 @@
+pandas==2.3.3
+polars==1.42.1
+matplotlib==3.11.1
+seaborn==0.13.2
+plotly==6.9.0
+scipy==1.17.1
+scikit-learn==1.9.0
+joblib==1.5.3
