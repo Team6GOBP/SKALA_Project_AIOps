@@ -6,6 +6,7 @@
 import sys
 from datetime import datetime
 from pathlib import Path
+from typing import Optional
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 from config import (
@@ -25,8 +26,8 @@ def generate_report(
     rows_after: int,
     stats_result: dict,
     ml_result: dict,
-    missing_counts: dict = None,
-    ttest_result: dict = None,
+    missing_counts: Optional[dict] = None,
+    ttest_result: Optional[dict] = None,
     report_path=REPORT_PATH,
 ) -> None:
     """report.md를 자동 생성한다.
