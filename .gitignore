@@ -1,0 +1,28 @@
+# --- OS / 에디터 잡파일 ---
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# --- Python 캐시/가상환경 ---
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
+env/
+*.egg-info/
+
+# --- Jupyter / matplotlib 캐시 ---
+.ipynb_checkpoints/
+skala-matplotlib-cache/
+
+# --- 원본 데이터셋 ---
+# spec.md 산출물 규칙(§5)에 원본 데이터는 없음. 각자 스크립트가 로컬 탐색 후
+# 없으면 UCI에서 자동 다운로드하므로 대용량 원본 CSV/데이터 파일은 커밋하지 않는다.
+# (팀원 산출물인 eda_chart_*.png, eda_chart_*.html, report.md, model.joblib은
+# 확장자가 겹치지 않아 아래 규칙의 영향을 받지 않는다.)
+*.csv
+*.data
+*.data.txt
+adult.test
